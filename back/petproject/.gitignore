@@ -1,0 +1,26 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Maven/Gradle
+/target/
+/build/
+.gradle/
+
+# Virtualizing entities
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+
+# Local uploaded media
+/uploads/

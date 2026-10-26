@@ -1,0 +1,87 @@
+.match-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.ms-empty {
+  color: var(--text-soft);
+}
+
+.ms-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+}
+
+.ms-thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex: 0 0 auto;
+}
+
+.ms-thumb-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  background: var(--surface);
+}
+
+.ms-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.ms-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ms-breed {
+  font-size: 0.78rem;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+}
+
+.ms-conf {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.ms-conf-pct {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.ms-conf.high .ms-conf-pct { color: #2e7d32; }
+.ms-conf.mid .ms-conf-pct { color: #b8860b; }
+.ms-conf.low .ms-conf-pct { color: var(--text-soft); }
+
+.ms-conf-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
+.ms-meta {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+}

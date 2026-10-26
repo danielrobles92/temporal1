@@ -1,0 +1,67 @@
+{
+  "backbone": "dognet_v2.pt",
+  "edges_months": [
+    0.0,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    7.5,
+    12.5,
+    24.0,
+    72.0,
+    180.0
+  ],
+  "hidden": 256,
+  "q_range": [
+    0.2,
+    0.8
+  ],
+  "balance": 0.75,
+  "stage_alpha": 1.0,
+  "trained_on": "all",
+  "epochs": 60,
+  "n_train": {
+    "petfinder_my": 6364,
+    "dogage": 26946
+  },
+  "val_metrics": {
+    "pf_n": 1241,
+    "pf_group_acc": 0.37469783425331116,
+    "pf_group_pm1": 0.7260273694992065,
+    "pf_range_hits": 0.6978243589401245,
+    "pf_mae_months": 13.638678550720215,
+    "pf_median_ae_months": 2.0999999046325684,
+    "pf_puppies_median_ae_months": 1.0,
+    "pf_puppy_vs_adult_acc": 0.8305084705352783,
+    "pf_group_acc_by_group": {
+      "q0-12%": 0.491,
+      "q12-25%": 0.514,
+      "q25-38%": 0.244,
+      "q38-50%": 0.133,
+      "q50-62%": 0.105,
+      "q62-75%": 0.27,
+      "q75-88%": 0.175,
+      "q88-100%": 0.585
+    },
+    "dogage_expert_n": 1088,
+    "dogage_expert_acc3": 0.4117647111415863,
+    "dogage_expert_acc3_old_head": 0.43474265933036804,
+    "dogage_expert_recall3": [
+      0.538,
+      0.508,
+      0.283
+    ],
+    "dogage_expert_range_hits": 0.5891544222831726,
+    "dogage_petfinder_n": 3082,
+    "dogage_petfinder_acc3": 0.5528877377510071,
+    "dogage_petfinder_acc3_old_head": 0.5311486124992371,
+    "dogage_petfinder_recall3": [
+      0.523,
+      0.586,
+      0.444
+    ],
+    "dogage_petfinder_range_hits": 0.7871512174606323
+  },
+  "val_metrics_from": "dognet_age_val"
+}

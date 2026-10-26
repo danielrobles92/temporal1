@@ -1,0 +1,96 @@
+{
+  "classes": [
+    "Chihuahua",
+    "Schnauzer",
+    "Poodle",
+    "Yorkshire Terrier",
+    "Pug",
+    "Husky Siberiano",
+    "Labrador Retriever",
+    "Pitbull (American Staffordshire)",
+    "Pastor Aleman",
+    "Golden Retriever",
+    "Bulldog Frances",
+    "Pomerania",
+    "Boxer",
+    "Beagle",
+    "Cocker Spaniel",
+    "Rottweiler",
+    "Maltes",
+    "Shih Tzu",
+    "Xoloitzcuintle",
+    "Doberman",
+    "Otro",
+    "no_perro:gato",
+    "no_perro:peluche",
+    "no_perro:animal",
+    "no_perro:objeto"
+  ],
+  "breeds": [
+    "Chihuahua",
+    "Schnauzer",
+    "Poodle",
+    "Yorkshire Terrier",
+    "Pug",
+    "Husky Siberiano",
+    "Labrador Retriever",
+    "Pitbull (American Staffordshire)",
+    "Pastor Aleman",
+    "Golden Retriever",
+    "Bulldog Frances",
+    "Pomerania",
+    "Boxer",
+    "Beagle",
+    "Cocker Spaniel",
+    "Rottweiler",
+    "Maltes",
+    "Shih Tzu",
+    "Xoloitzcuintle",
+    "Doberman"
+  ],
+  "otro_index": 20,
+  "not_dog_index": 21,
+  "not_dog_types": [
+    "gato",
+    "peluche",
+    "animal",
+    "objeto"
+  ],
+  "sizes": [
+    "pequeno",
+    "mediano",
+    "grande"
+  ],
+  "ages": [
+    "cachorro",
+    "adulto",
+    "senior"
+  ],
+  "size_weight_kg": {
+    "pequeno": [
+      1,
+      10
+    ],
+    "mediano": [
+      10,
+      25
+    ],
+    "grande": [
+      25,
+      60
+    ]
+  },
+  "has_age": true,
+  "img_size": 224,
+  "trained_on": "train",
+  "val_metrics": {
+    "breed_acc": 0.8849,
+    "otro_recall": 0.8875,
+    "notdog_recall": 0.9806,
+    "notdog_type_acc": 0.9576,
+    "dog_false_reject": 0.0023,
+    "size_acc": 0.8451,
+    "age_acc": 0.5041
+  },
+  "epoch": 13
+}

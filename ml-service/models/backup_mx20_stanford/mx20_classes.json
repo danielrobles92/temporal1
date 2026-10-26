@@ -1,0 +1,26 @@
+{
+  "classes": [
+    "Chihuahua",
+    "Schnauzer",
+    "Poodle",
+    "Yorkshire Terrier",
+    "Pug",
+    "Husky Siberiano",
+    "Labrador Retriever",
+    "Pitbull (American Staffordshire)",
+    "Pastor Aleman",
+    "Golden Retriever",
+    "Bulldog Frances",
+    "Pomerania",
+    "Boxer",
+    "Beagle",
+    "Cocker Spaniel",
+    "Rottweiler",
+    "Maltes",
+    "Shih Tzu",
+    "Xoloitzcuintle",
+    "Doberman"
+  ],
+  "embed_dim": 1280,
+  "val_acc": 0.9682080924855492
+}

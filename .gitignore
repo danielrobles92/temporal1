@@ -1,0 +1,16 @@
+# Carpetas que no se suben
+imagesDS/
+
+# Frontend
+front/node_modules/
+front/build/
+
+# Backend
+back/petproject/target/
+back/petproject/uploads/
+
+# Variables y archivos locales
+.env
+*.log
+.DS_Store
+Thumbs.db

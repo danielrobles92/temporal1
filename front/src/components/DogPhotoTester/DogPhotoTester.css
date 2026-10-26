@@ -1,0 +1,102 @@
+.photo-tester {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.photo-tester-drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 24px 16px;
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+  color: var(--text);
+  text-align: center;
+  cursor: pointer;
+}
+
+.photo-tester-drop span { color: var(--text-soft); font-size: 0.85rem; }
+
+.photo-tester-drop:hover,
+.photo-tester-drop:focus-visible,
+.photo-tester-drop.is-dragging {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.photo-tester-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.photo-tester-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.photo-tester-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.photo-tester-card.is-dog { border-top-color: var(--success); }
+.photo-tester-card.is-other { border-top-color: var(--warning); }
+.photo-tester-card.is-not-dog { border-top-color: var(--danger); }
+
+.photo-tester-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--surface-soft);
+}
+
+.photo-tester-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px 12px;
+}
+
+.photo-tester-name {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.photo-tester-verdict { font-weight: 700; }
+.photo-tester-verdict span { font-weight: 400; color: var(--text-soft); font-size: 0.85rem; }
+.photo-tester-verdict.is-dog { color: var(--success); }
+.photo-tester-verdict.is-other { color: var(--warning); }
+.photo-tester-verdict.is-not-dog { color: var(--danger); }
+
+.photo-tester-muted { margin: 0; color: var(--text-soft); font-size: 0.88rem; }
+.photo-tester-error { margin: 0; color: var(--danger); font-size: 0.88rem; }
+
+.photo-tester-body dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.photo-tester-body dt { color: var(--text-soft); }
+.photo-tester-body dd { margin: 0; color: var(--text); }
+.photo-tester-body dd small { color: var(--text-soft); }

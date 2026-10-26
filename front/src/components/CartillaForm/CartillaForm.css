@@ -1,0 +1,82 @@
+.cartilla-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cartilla-vacunas {
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.cartilla-vacunas-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cartilla-vacunas-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.btn-add-vacuna {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.cartilla-empty {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+
+.cartilla-vacuna-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr 0.8fr auto;
+  gap: 10px;
+  align-items: end;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+  margin-bottom: 8px;
+}
+
+.cartilla-vacuna-row .form-group {
+  margin: 0;
+}
+
+.cartilla-vacuna-row label {
+  font-size: 0.72rem;
+}
+
+.cartilla-vacuna-remove {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cartilla-vacuna-remove:hover {
+  background: #fde8e8;
+  border-color: #e57373;
+  color: #c62828;
+}
+
+@media (max-width: 820px) {
+  .cartilla-vacuna-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cartilla-vacuna-remove {
+    grid-column: 2;
+    justify-self: end;
+  }
+}

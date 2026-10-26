@@ -1,0 +1,62 @@
+modelo dognet_v2_val | entrenado con: train | epoch 13
+val: 10038 imagenes | {'archive': 64, 'caltech': 1425, 'coco': 1035, 'dogage': 4176, 'oxford': 852, 'r3p0': 508, 'stanford': 1978}
+
+Top 5 configuraciones (score, raza, otro, no-perro, perro rechazado):
+  2.7433 raza=0.888 otro=0.892 np=0.980 rej=0.0017 {'not_dog': 0.3, 'breed_min': 0.3, 'teddy_imagenet': 0.3, 'wild_imagenet': 1.01, 'rescue_imagenet': 0.5}
+  2.7433 raza=0.888 otro=0.892 np=0.980 rej=0.0017 {'not_dog': 0.3, 'breed_min': 0.3, 'teddy_imagenet': 0.5, 'wild_imagenet': 1.01, 'rescue_imagenet': 0.5}
+  2.7433 raza=0.888 otro=0.892 np=0.980 rej=0.0017 {'not_dog': 0.3, 'breed_min': 0.3, 'teddy_imagenet': 0.7, 'wild_imagenet': 1.01, 'rescue_imagenet': 0.5}
+  2.7433 raza=0.888 otro=0.892 np=0.980 rej=0.0017 {'not_dog': 0.3, 'breed_min': 0.3, 'teddy_imagenet': 1.01, 'wild_imagenet': 1.01, 'rescue_imagenet': 0.5}
+  2.7432 raza=0.888 otro=0.893 np=0.975 rej=0.0012 {'not_dog': 0.6, 'breed_min': 0.3, 'teddy_imagenet': 0.3, 'wild_imagenet': 1.01, 'rescue_imagenet': 1.01}
+
+Umbrales elegidos: {'not_dog': 0.5, 'breed_min': 0.4, 'teddy_imagenet': 0.5, 'wild_imagenet': 1.01, 'rescue_imagenet': 0.7}
+  raza_correcta (20 razas)                     87.6%  (n=695)
+  otro_detectado (otras razas/mestizos)        89.8%  (n=2383)
+  no_perro_detectado                           97.5%  (n=2784)
+  no_perro_tipo_correcto                       94.8%  (n=2784)
+  perro_rechazado_por_error                     0.2%  (n=7254)
+  tamano_correcto                              84.5%  (n=3060)
+  edad_correcta                                50.4%  (n=4176)
+    no_perro:gato detectado                    96.7%  (n=573)
+    no_perro:peluche detectado                 97.2%  (n=249)
+    no_perro:animal detectado                  97.0%  (n=1031)
+    no_perro:objeto detectado                  98.7%  (n=931)
+    [archive] perro rechazado                   0.0%  (n=64)
+    [dogage] perro rechazado                    0.1%  (n=4176)
+    [oxford] perro rechazado                    0.2%  (n=580)
+    [r3p0] perro rechazado                      0.6%  (n=508)
+    [stanford] perro rechazado                  0.2%  (n=1926)
+
+Por raza (acierto | a que se confunde):
+  Chihuahua                           90.0% (n= 40)  [('Otro', 4)]
+  Schnauzer                           84.4% (n= 45)  [('Otro', 7)]
+  Poodle                              76.9% (n= 52)  [('Otro', 10), ('no_perro:animal', 1)]
+  Yorkshire Terrier                   85.7% (n= 63)  [('Otro', 8), ('no_perro:gato', 1)]
+  Pug                                 90.7% (n= 54)  [('Otro', 3), ('Beagle', 1)]
+  Husky Siberiano                     95.8% (n= 24)  [('Pastor Aleman', 1)]
+  Labrador Retriever                  68.0% (n= 25)  [('Otro', 6), ('Golden Retriever', 1)]
+  Pitbull (American Staffordshire)    83.8% (n= 37)  [('Otro', 5), ('Boxer', 1)]
+  Pastor Aleman                       66.7% (n= 21)  [('Otro', 6), ('Labrador Retriever', 1)]
+  Golden Retriever                    90.0% (n= 20)  [('Otro', 1), ('Cocker Spaniel', 1)]
+  Bulldog Frances                     83.3% (n= 12)  [('Pitbull (American Staffordshire)', 1), ('Otro', 1)]
+  Pomerania                           94.1% (n= 51)  [('Chihuahua', 1), ('Golden Retriever', 1)]
+  Boxer                               87.8% (n= 41)  [('Otro', 4), ('no_perro:objeto', 1)]
+  Beagle                              85.7% (n= 49)  [('Otro', 7)]
+  Cocker Spaniel                      95.7% (n= 47)  [('Otro', 2)]
+  Rottweiler                          96.2% (n= 26)  [('Doberman', 1)]
+  Maltes                              96.7% (n= 30)  [('Poodle', 1)]
+  Shih Tzu                            83.3% (n= 18)  [('Otro', 2), ('Maltes', 1)]
+  Xoloitzcuintle                      95.0% (n= 20)  [('Chihuahua', 1)]
+  Doberman                           100.0% (n= 20)  []
+
+'Otro' confundido con: [('Yorkshire Terrier', 21), ('Boxer', 20), ('Pitbull (American Staffordshire)', 20), ('Chihuahua', 20), ('Beagle', 20), ('Shih Tzu', 19), ('Husky Siberiano', 18), ('Schnauzer', 16)]
+No-perro aceptado como perro: [(('no_perro:animal', 'Otro'), 25), (('no_perro:gato', 'Otro'), 14), (('no_perro:objeto', 'Otro'), 11), (('no_perro:peluche', 'Otro'), 5), (('no_perro:animal', 'Pastor Aleman'), 2), (('no_perro:animal', 'Xoloitzcuintle'), 2), (('no_perro:objeto', 'Yorkshire Terrier'), 1), (('no_perro:animal', 'Maltes'), 1)]
+
+Edad [expert] acierto 44.0% (n=1088)  filas=real, cols=predicha
+   cachorro  [119, 88, 16]
+   adulto    [156, 167, 47]
+   senior    [89, 213, 193]
+
+Edad [petfinder] acierto 52.7% (n=3088)  filas=real, cols=predicha
+   cachorro  [555, 445, 68]
+   adulto    [568, 927, 278]
+   senior    [34, 69, 144]

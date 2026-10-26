@@ -1,0 +1,12 @@
+# API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic-settings==2.7.1
+
+# Modelo / vision por computadora (CPU)
+# Para CPU se recomienda instalar torch desde el indice oficial:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+torchvision==0.20.1
+pillow==11.1.0

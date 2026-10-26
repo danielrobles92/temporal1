@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: petproject
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pet_adoption
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+
+app:
+  upload-dir: uploads
+
+# Microservicio de reconocimiento de imagenes (FastAPI + EfficientNetB0)
+mlservice:
+  base-url: http://localhost:8000
+  timeout-ms: 15000
+
+# Seguridad: el secreto JWT DEBE venir de la variable de entorno JWT_SECRET en
+# produccion. El valor por defecto es solo para desarrollo local (rotado).
+jwt:
+  secret: ${JWT_SECRET:perreque_jwt_dev_2026_CAMBIAR_en_produccion__a7Fx93Qm2Lp8Zr5}
+  expiration-ms: 14400000   # 4 horas
+
+# Proteccion contra fuerza bruta en el login
+security:
+  login:
+    max-attempts: 5
+    lock-minutes: 15

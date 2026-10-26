@@ -1,0 +1,332 @@
+{
+ "manifiestos": {
+  "archive": {
+   "train": 415,
+   "val": 64,
+   "total": 479
+  },
+  "caltech": {
+   "train": 10468,
+   "val": 1425,
+   "total": 11893
+  },
+  "coco": {
+   "train": 8039,
+   "val": 1035,
+   "total": 9074
+  },
+  "dogage": {
+   "val": 4176,
+   "train": 22796,
+   "total": 26972
+  },
+  "oxford": {
+   "train": 6317,
+   "val": 852,
+   "total": 7169
+  },
+  "r3p0": {
+   "val": 508,
+   "train": 3795,
+   "total": 4303
+  },
+  "stanford": {
+   "train": 13988,
+   "val": 1978,
+   "total": 15966
+  }
+ },
+ "por_clase_split": {
+  "Otro": {
+   "train": 16942,
+   "val": 2383,
+   "total": 19325
+  },
+  "no_perro:objeto": {
+   "train": 6989,
+   "val": 931,
+   "total": 7920
+  },
+  "no_perro:animal": {
+   "train": 7355,
+   "val": 1031,
+   "total": 8386
+  },
+  "no_perro:peluche": {
+   "train": 2226,
+   "val": 249,
+   "total": 2475
+  },
+  "no_perro:gato": {
+   "train": 4307,
+   "val": 573,
+   "total": 4880
+  },
+  "perro (solo edad)": {
+   "val": 4176,
+   "train": 22796,
+   "total": 26972
+  },
+  "Pitbull (American Staffordshire)": {
+   "train": 335,
+   "val": 37,
+   "total": 372
+  },
+  "Beagle": {
+   "train": 355,
+   "val": 49,
+   "total": 404
+  },
+  "Boxer": {
+   "train": 312,
+   "val": 41,
+   "total": 353
+  },
+  "Chihuahua": {
+   "train": 318,
+   "val": 40,
+   "total": 358
+  },
+  "Cocker Spaniel": {
+   "train": 331,
+   "val": 47,
+   "total": 378
+  },
+  "Pomerania": {
+   "train": 378,
+   "val": 51,
+   "total": 429
+  },
+  "Pug": {
+   "val": 54,
+   "train": 401,
+   "total": 455
+  },
+  "Yorkshire Terrier": {
+   "train": 309,
+   "val": 63,
+   "total": 372
+  },
+  "Bulldog Frances": {
+   "train": 150,
+   "val": 12,
+   "total": 162
+  },
+  "Doberman": {
+   "train": 134,
+   "val": 20,
+   "total": 154
+  },
+  "Golden Retriever": {
+   "train": 166,
+   "val": 20,
+   "total": 186
+  },
+  "Husky Siberiano": {
+   "train": 183,
+   "val": 24,
+   "total": 207
+  },
+  "Labrador Retriever": {
+   "train": 170,
+   "val": 25,
+   "total": 195
+  },
+  "Maltes": {
+   "train": 223,
+   "val": 30,
+   "total": 253
+  },
+  "Pastor Aleman": {
+   "train": 145,
+   "val": 21,
+   "total": 166
+  },
+  "Poodle": {
+   "train": 421,
+   "val": 52,
+   "total": 473
+  },
+  "Rottweiler": {
+   "val": 26,
+   "train": 126,
+   "total": 152
+  },
+  "Schnauzer": {
+   "train": 418,
+   "val": 45,
+   "total": 463
+  },
+  "Shih Tzu": {
+   "train": 198,
+   "val": 18,
+   "total": 216
+  },
+  "Xoloitzcuintle": {
+   "train": 130,
+   "val": 20,
+   "total": 150
+  }
+ },
+ "calidad_originales": {
+  "R3P0 (20 razas)": {
+   "muestra": 400,
+   "ancho_mediana": 500,
+   "alto_mediana": 375,
+   "lado_menor_min": 140,
+   "lado_menor_p10": 273,
+   "lado_menor_mediana": 375,
+   "lado_menor_max": 3024,
+   "megapixeles_mediana": 0.188,
+   "kb_mediana": 33.0,
+   "kb_max": 725.2,
+   "pct_menores_224px": 4.5,
+   "nitidez_mediana": 962.7
+  },
+  "Stanford Dogs (otras razas)": {
+   "muestra": 400,
+   "ancho_mediana": 500,
+   "alto_mediana": 375,
+   "lado_menor_min": 120,
+   "lado_menor_p10": 249,
+   "lado_menor_mediana": 375,
+   "lado_menor_max": 1188,
+   "megapixeles_mediana": 0.188,
+   "kb_mediana": 33.3,
+   "kb_max": 201.8,
+   "pct_menores_224px": 7.8,
+   "nitidez_mediana": 1091.7
+  },
+  "Oxford-IIIT Pets": {
+   "muestra": 400,
+   "ancho_mediana": 500,
+   "alto_mediana": 375,
+   "lado_menor_min": 180,
+   "lado_menor_p10": 229,
+   "lado_menor_mediana": 335,
+   "lado_menor_max": 1920,
+   "megapixeles_mediana": 0.168,
+   "kb_mediana": 105.3,
+   "kb_max": 1037.0,
+   "pct_menores_224px": 4.2,
+   "nitidez_mediana": 740.6
+  },
+  "Caltech-256": {
+   "muestra": 400,
+   "ancho_mediana": 300,
+   "alto_mediana": 290,
+   "lado_menor_min": 105,
+   "lado_menor_p10": 159,
+   "lado_menor_mediana": 249,
+   "lado_menor_max": 1509,
+   "megapixeles_mediana": 0.083,
+   "kb_mediana": 16.4,
+   "kb_max": 798.8,
+   "pct_menores_224px": 40.8,
+   "nitidez_mediana": 1100.2
+  },
+  "COCO 2017 (no perro)": {
+   "muestra": 400,
+   "ancho_mediana": 640,
+   "alto_mediana": 480,
+   "lado_menor_min": 226,
+   "lado_menor_p10": 375,
+   "lado_menor_mediana": 429,
+   "lado_menor_max": 640,
+   "megapixeles_mediana": 0.274,
+   "kb_mediana": 154.9,
+   "kb_max": 517.4,
+   "pct_menores_224px": 0.0,
+   "nitidez_mediana": 1266.0
+  },
+  "DogAge (Expert + PetFinder)": {
+   "muestra": 400,
+   "ancho_mediana": 500,
+   "alto_mediana": 627,
+   "lado_menor_min": 180,
+   "lado_menor_p10": 375,
+   "lado_menor_mediana": 500,
+   "lado_menor_max": 500,
+   "megapixeles_mediana": 0.307,
+   "kb_mediana": 50.2,
+   "kb_max": 220.1,
+   "pct_menores_224px": 1.0,
+   "nitidez_mediana": 906.6
+  },
+  "PetFinder.my (edad en meses)": {
+   "muestra": 400,
+   "ancho_mediana": 400,
+   "alto_mediana": 400,
+   "lado_menor_min": 113,
+   "lado_menor_p10": 264,
+   "lado_menor_mediana": 300,
+   "lado_menor_max": 640,
+   "megapixeles_mediana": 0.12,
+   "kb_mediana": 22.4,
+   "kb_max": 104.4,
+   "pct_menores_224px": 3.2,
+   "nitidez_mediana": 553.2
+  },
+  "Open Images (cachorro si/no, recortes)": {
+   "muestra": 400,
+   "ancho_mediana": 318,
+   "alto_mediana": 256,
+   "lado_menor_min": 224,
+   "lado_menor_p10": 256,
+   "lado_menor_mediana": 256,
+   "lado_menor_max": 256,
+   "megapixeles_mediana": 0.087,
+   "kb_mediana": 23.0,
+   "kb_max": 56.6,
+   "pct_menores_224px": 0.0,
+   "nitidez_mediana": 426.5
+  },
+  "MPDD (re-identificacion, pruebas)": {
+   "muestra": 400,
+   "ancho_mediana": 208,
+   "alto_mediana": 221,
+   "lado_menor_min": 32,
+   "lado_menor_p10": 85,
+   "lado_menor_mediana": 181,
+   "lado_menor_max": 1132,
+   "megapixeles_mediana": 0.042,
+   "kb_mediana": 10.6,
+   "kb_max": 587.9,
+   "pct_menores_224px": 63.5,
+   "nitidez_mediana": 200.9
+  }
+ },
+ "total_entrenamiento_dognet_v2": 75856,
+ "edad": {
+  "dogage_expert|adulto|val": 370,
+  "dogage_expert|cachorro|val": 223,
+  "dogage_expert|senior|val": 495,
+  "dogage_petfinder|adulto|train": 13156,
+  "dogage_petfinder|adulto|val": 1773,
+  "dogage_petfinder|cachorro|train": 7684,
+  "dogage_petfinder|cachorro|val": 1068,
+  "dogage_petfinder|senior|train": 1956,
+  "dogage_petfinder|senior|val": 247,
+  "openimages|cachorro|test": 317,
+  "openimages|cachorro|train": 289,
+  "openimages|no_cachorro|test": 706,
+  "openimages|no_cachorro|train": 444,
+  "petfinder_my|q0-12%|train": 682,
+  "petfinder_my|q0-12%|val": 172,
+  "petfinder_my|q12-25%|train": 1205,
+  "petfinder_my|q12-25%|val": 281,
+  "petfinder_my|q25-38%|train": 590,
+  "petfinder_my|q25-38%|val": 157,
+  "petfinder_my|q38-50%|train": 318,
+  "petfinder_my|q38-50%|val": 76,
+  "petfinder_my|q50-62%|train": 414,
+  "petfinder_my|q50-62%|val": 89,
+  "petfinder_my|q62-75%|train": 604,
+  "petfinder_my|q62-75%|val": 152,
+  "petfinder_my|q75-88%|train": 527,
+  "petfinder_my|q75-88%|val": 120,
+  "petfinder_my|q88-100%|train": 837,
+  "petfinder_my|q88-100%|val": 205
+ },
+ "edad_total": 35157
+}

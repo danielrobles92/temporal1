@@ -1,0 +1,461 @@
+.perdidas-page {
+  width: calc(100% - 32px);
+  max-width: none;
+  margin: 0 16px;
+}
+
+.perdidas-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+}
+
+.perdidas-filtros-card,
+.perdidas-resultados {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.perdidas-filtros-card {
+  padding: 1.5rem;
+  position: sticky;
+  top: 96px;
+  width: 320px;
+  max-width: 100%;
+  min-height: 650px;
+  z-index: 20;
+}
+
+.perdidas-filtros-title {
+  color: var(--primary);
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.perdidas-filtros-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.perdidas-filtros-form .form-group label {
+  font-size: 0.88rem;
+}
+
+.perdidas-input {
+  width: 100%;
+  min-height: 44px;
+}
+
+.perdidas-filtros-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.perdidas-resultados {
+  padding: 1.5rem;
+  min-height: 650px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.perdidas-resultados-header {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) 120px;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.perdidas-resultados-header h1 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.perdidas-carousel-side-button {
+  min-width: 112px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.perdidas-carousel-side-button:hover:not(:disabled) {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.perdidas-carousel-side-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.perdidas-carousel-side-spacer {
+  width: 112px;
+  height: 42px;
+}
+
+.perdidas-carousel {
+  width: 100%;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.perdidas-carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.perdidas-carousel-slide {
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
+  max-width: calc((100% - 40px) / 3);
+}
+
+.perdidas-carousel-slide .mascota-card {
+  height: 100%;
+}
+
+.perdidas-mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.perdidas-mascotas-grid .no-results {
+  grid-column: 1 / -1;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-soft);
+  gap: 0.35rem;
+}
+
+.perdidas-mascotas-grid .no-results p {
+  margin: 0;
+}
+
+.perdidas-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(17, 24, 39, 0.46);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.perdidas-modal {
+  width: min(1080px, calc(100vw - 48px));
+  max-height: 88vh;
+  overflow: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+}
+
+.perdidas-modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  border-bottom: 1px solid #d9d6b8;
+  background: linear-gradient(135deg, #fffbe8, #ffffff);
+}
+
+.perdidas-modal-header span {
+  color: var(--primary-light);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.perdidas-modal-header h2 {
+  margin: 4px 0 0;
+  color: var(--primary);
+}
+
+.perdidas-modal-header button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--primary-dark);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.perdidas-modal-body {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1.05fr);
+  gap: 18px;
+  padding: 22px 24px 24px;
+  align-items: start;
+}
+
+.perdidas-modal-gallery img,
+.perdidas-modal-placeholder {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.perdidas-modal-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dbeafe, #ece8c8);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.perdidas-modal-thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.perdidas-modal-thumbs img {
+  height: 76px;
+}
+
+.perdidas-modal-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  align-content: start;
+}
+
+.perdidas-modal-info-item,
+.perdidas-modal-description {
+  padding: 12px;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.perdidas-modal-info-item span,
+.perdidas-modal-description span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.perdidas-modal-info-item strong,
+.perdidas-modal-description p {
+  color: var(--text);
+  margin: 0;
+}
+
+.perdidas-modal-description {
+  grid-column: 1 / -1;
+  border-left: 5px solid #d9d6b8;
+}
+
+.perdidas-modal-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.perdidas-modal-actions .btn {
+  min-width: 180px;
+}
+
+.perdidas-contact-form {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.perdidas-contact-intro,
+.perdidas-contact-full,
+.perdidas-contact-actions {
+  grid-column: 1 / -1;
+}
+
+.perdidas-contact-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--primary-dark);
+}
+
+.perdidas-contact-intro span {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.perdidas-sighting-picker {
+  min-height: 50px;
+  border: 1px dashed var(--primary-light);
+  border-radius: var(--radius-sm);
+  background: #f8fbff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.perdidas-sighting-picker input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.perdidas-sighting-picker span {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.perdidas-sighting-picker strong {
+  color: var(--text-soft);
+}
+
+.perdidas-sighting-previews {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.perdidas-sighting-previews img {
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.perdidas-contact-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 960px) {
+  .perdidas-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .perdidas-filtros-card {
+    position: static;
+    width: auto;
+    max-height: none;
+    min-height: auto;
+  }
+
+  .perdidas-resultados {
+    min-height: auto;
+  }
+
+  .perdidas-carousel-slide {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  .perdidas-carousel-track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .perdidas-mascotas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perdidas-carousel-slide {
+    flex-basis: 100%;
+  }
+
+  .perdidas-carousel-track {
+    gap: 0;
+  }
+
+  .perdidas-resultados-header {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+
+  .perdidas-resultados-header h1 {
+    text-align: left;
+  }
+
+  .perdidas-carousel-side-spacer {
+    display: none;
+  }
+
+  .perdidas-modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .perdidas-modal-info {
+    grid-template-columns: 1fr;
+  }
+
+  .perdidas-modal-gallery img,
+  .perdidas-modal-placeholder {
+    height: 260px;
+  }
+
+  .perdidas-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .perdidas-modal-actions .btn {
+    width: 100%;
+  }
+
+  .perdidas-contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .perdidas-contact-actions {
+    flex-direction: column-reverse;
+  }
+}

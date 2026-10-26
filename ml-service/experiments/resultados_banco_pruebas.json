@@ -1,0 +1,968 @@
+{
+ "fecha": "2026-10-20 20:01",
+ "dispositivo": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+ "coseno_p50": 0.7463,
+ "coseno_p30": 0.719,
+ "coseno_p70": 0.7737,
+ "MPDD": {
+  "perros": 191,
+  "fotos": 1657,
+  "perros_dev": 95,
+  "fotos_dev": 1032,
+  "perros_test": 96,
+  "consultas_test": 104,
+  "galeria_test": 521,
+  "lado_menor_px": {
+   "min": 27,
+   "mediana": 176.0,
+   "max": 1201
+  },
+  "ms_por_imagen_vector": 11.34,
+  "aceptadas_como_perro": 0.8352444176222088,
+  "razas_detectadas": [
+   [
+    "Otro",
+    988
+   ],
+   [
+    "rechazada",
+    273
+   ],
+   [
+    "Poodle",
+    99
+   ],
+   [
+    "Pomerania",
+    87
+   ],
+   [
+    "Golden Retriever",
+    39
+   ],
+   [
+    "Pastor Aleman",
+    37
+   ]
+  ]
+ },
+ "base_MPDD_completo": {
+  "n_consultas": 1657,
+  "top1": 0.9161134580567291,
+  "top5": 0.968014484007242,
+  "mAP": 0.710400627767688
+ },
+ "PI-01": {
+  "n": 1657,
+  "perros": 191,
+  "misma_foto_top1": 1.0,
+  "misma_foto_coseno_min": 0.9999995231628418,
+  "resubida_top1": 1.0,
+  "resubida_coseno_min": 0.8168088793754578,
+  "resubida_confianza_min": 0.8985199928283691,
+  "ms_por_imagen": 7.87
+ },
+ "PI-02": {
+  "perros": 95,
+  "fotos": 1032,
+  "visual": {
+   "n_consultas": 1032,
+   "top1": 0.9476744186046512,
+   "top5": 0.9844961240310077,
+   "mAP": 0.7687312965188794
+  },
+  "sistema_raza_mas_visual": {
+   "n_consultas": 1032,
+   "top1": 0.9118217054263565,
+   "top5": 0.9583333333333334,
+   "mAP": 0.71386052793395
+  }
+ },
+ "PI-03": {
+  "perros": 96,
+  "consultas": 104,
+  "galeria": 521,
+  "visual": {
+   "n_consultas": 104,
+   "top1": 0.8269230769230769,
+   "top5": 0.9423076923076923,
+   "mAP": 0.6945267827214602
+  },
+  "sistema_raza_mas_visual": {
+   "n_consultas": 104,
+   "top1": 0.7596153846153846,
+   "top5": 0.9134615384615384,
+   "mAP": 0.62984426582011
+  },
+  "top1_con_confianza_>=50": 0.46153846153846156
+ },
+ "PI-04": {
+  "test_visual": {
+   "n_consultas": 104,
+   "coseno_mejor_impostor_mediana": 0.6164519786834717,
+   "falsa_alarma_posible (>=30 %)": 0.0673076923076923,
+   "falsa_alarma_probable (>=50 %)": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)": 0.009615384615384616
+  },
+  "test_sistema_con_raza": {
+   "n_consultas": 104,
+   "coseno_mejor_impostor_mediana": 25.291221618652344,
+   "falsa_alarma_posible (>=30 %)": 0.0673076923076923,
+   "falsa_alarma_probable (>=50 %)": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)": 0.009615384615384616
+  },
+  "MPDD_completo_visual": {
+   "n_consultas": 1657,
+   "coseno_mejor_impostor_mediana": 0.6357526779174805,
+   "falsa_alarma_posible (>=30 %)": 0.08931804465902234,
+   "falsa_alarma_probable (>=50 %)": 0.04224502112251056,
+   "falsa_alarma_muy probable (>=70 %)": 0.013277006638503319
+  }
+ },
+ "PI-05": {
+  "criterio_alta_calidad": "lado menor >= 224 px y nitidez (varianza del laplaciano) >= mediana",
+  "alta_calidad": {
+   "n_consultas": 392,
+   "top1": 0.9795918367346939,
+   "top5": 0.9923469387755102,
+   "mAP": 0.7995043368287515
+  },
+  "resto": {
+   "n_consultas": 1265,
+   "top1": 0.8964426877470356,
+   "top5": 0.9604743083003953,
+   "mAP": 0.6827890436159592
+  },
+  "todas": {
+   "n_consultas": 1657,
+   "top1": 0.9161134580567291,
+   "top5": 0.968014484007242,
+   "mAP": 0.710400627767688
+  }
+ },
+ "PI-06": {
+  "borrosa (gauss r=2.5)": {
+   "n_consultas": 1657,
+   "top1": 0.552202776101388,
+   "top5": 0.7332528666264333,
+   "mAP": 0.4241966772328427,
+   "aceptadas_como_perro": 0.4230537115268558,
+   "caida_top1_pts": 36.4,
+   "ms_por_imagen": 7.75
+  },
+  "baja resolucion (48 px)": {
+   "n_consultas": 1657,
+   "top1": 0.7223898611949306,
+   "top5": 0.8738684369342185,
+   "mAP": 0.5078245185533703,
+   "aceptadas_como_perro": 0.6252263126131563,
+   "caida_top1_pts": 19.4,
+   "ms_por_imagen": 5.27
+  },
+  "movimiento (11 px)": {
+   "n_consultas": 1657,
+   "top1": 0.7036813518406759,
+   "top5": 0.8310199155099578,
+   "mAP": 0.5184838321353743,
+   "aceptadas_como_perro": 0.5503922751961376,
+   "caida_top1_pts": 21.2,
+   "ms_por_imagen": 7.34
+  },
+  "poca luz + ruido": {
+   "n_consultas": 1657,
+   "top1": 0.5141822570911285,
+   "top5": 0.6710923355461678,
+   "mAP": 0.37708409157842676,
+   "aceptadas_como_perro": 0.24622812311406156,
+   "caida_top1_pts": 40.2,
+   "ms_por_imagen": 7.44
+  },
+  "JPEG muy comprimido (q=10)": {
+   "n_consultas": 1657,
+   "top1": 0.7423053711526856,
+   "top5": 0.8811104405552203,
+   "mAP": 0.5269429982094787,
+   "aceptadas_como_perro": 0.7374773687386844,
+   "caida_top1_pts": 17.4,
+   "ms_por_imagen": 8.32
+  }
+ },
+ "PI-07": {
+  "noche": {
+   "n_consultas": 1657,
+   "top1": 0.08569704284852142,
+   "top5": 0.17622208811104406,
+   "mAP": 0.08300149367544965,
+   "aceptadas_como_perro": 0.049487024743512374,
+   "caida_top1_pts": 83.0,
+   "ms_por_imagen": 7.33
+  },
+  "sobreexposicion": {
+   "n_consultas": 1657,
+   "top1": 0.8575739287869644,
+   "top5": 0.9414604707302353,
+   "mAP": 0.6369733711161099,
+   "aceptadas_como_perro": 0.7767048883524442,
+   "caida_top1_pts": 5.9,
+   "ms_por_imagen": 7.53
+  },
+  "contraluz": {
+   "n_consultas": 1657,
+   "top1": 0.6173808086904043,
+   "top5": 0.7869643934821967,
+   "mAP": 0.4570390305863712,
+   "aceptadas_como_perro": 0.45262522631261315,
+   "caida_top1_pts": 29.9,
+   "ms_por_imagen": 7.13
+  }
+ },
+ "PI-09": {
+  "solo mitad superior": {
+   "n_consultas": 1657,
+   "top1": 0.5528062764031382,
+   "top5": 0.7628243814121907,
+   "mAP": 0.40792234967196456,
+   "aceptadas_como_perro": 0.5015087507543754,
+   "caida_top1_pts": 36.3,
+   "ms_por_imagen": 8.54
+  },
+  "solo mitad inferior": {
+   "n_consultas": 1657,
+   "top1": 0.5226312613156306,
+   "top5": 0.751961375980688,
+   "mAP": 0.3797571556907603,
+   "aceptadas_como_perro": 0.6825588412794207,
+   "caida_top1_pts": 39.3,
+   "ms_por_imagen": 7.52
+  },
+  "objeto delante (35 %)": {
+   "n_consultas": 1657,
+   "top1": 0.5672902836451418,
+   "top5": 0.7423053711526856,
+   "mAP": 0.3994692603929785,
+   "aceptadas_como_perro": 0.8074834037417019,
+   "caida_top1_pts": 34.9,
+   "ms_por_imagen": 7.27
+  },
+  "2 objetos aleatorios (2x20 %)": {
+   "n_consultas": 1657,
+   "top1": 0.5829812914906457,
+   "top5": 0.7489438744719372,
+   "mAP": 0.40903023895398216,
+   "aceptadas_como_perro": 0.6716958358479179,
+   "caida_top1_pts": 33.3,
+   "ms_por_imagen": 7.19
+  }
+ },
+ "PI-11": {
+  "con ropa (sueter)": {
+   "n_consultas": 1657,
+   "top1": 0.6849728424864212,
+   "top5": 0.8352444176222088,
+   "mAP": 0.4864847205651196,
+   "aceptadas_como_perro": 0.687990343995172,
+   "caida_top1_pts": 23.1,
+   "ms_por_imagen": 7.29
+  },
+  "mojado / sucio": {
+   "n_consultas": 1657,
+   "top1": 0.8436934218467109,
+   "top5": 0.9348219674109837,
+   "mAP": 0.623368238603249,
+   "aceptadas_como_perro": 0.6729028364514182,
+   "caida_top1_pts": 7.2,
+   "ms_por_imagen": 7.63
+  }
+ },
+ "PI-08": {
+  "solo_otra_pose": {
+   "n_consultas": 1657,
+   "top1": 0.8943874471937237,
+   "top5": 0.955944477972239,
+   "mAP": 0.6989060440262741
+  },
+  "solo_misma_pose": {
+   "n_consultas": 1266,
+   "top1": 0.6666666666666666,
+   "top5": 0.7804107424960506,
+   "mAP": 0.6374587253476603
+  },
+  "espejo_(lado_contrario)": {
+   "n_consultas": 1657,
+   "top1": 0.9155099577549789,
+   "top5": 0.9674109837054918,
+   "mAP": 0.7121416360071465
+  }
+ },
+ "PI-10": {
+  "MPDD_impostor": {
+   "n_consultas": 1657,
+   "impostor_supera_al_correcto": 0.08388654194327097,
+   "impostor_posible (>=30 %)": 0.08931804465902234,
+   "impostor_probable (>=50 %)": 0.04224502112251056,
+   "impostor_muy probable (>=70 %)": 0.013277006638503319
+  },
+  "R3P0_misma_raza_y_color": {
+   "pares": 146332,
+   "fotos": 4303,
+   "posibles_duplicados_excluidos": 6,
+   "falsa_coincidencia_posible (>=30 %)": 0.014193751195910669,
+   "falsa_coincidencia_probable (>=50 %)": 0.00686111035180275,
+   "falsa_coincidencia_muy probable (>=70 %)": 0.0029385233578438073,
+   "coseno_p99": 0.7333021759986877
+  },
+  "R3P0_misma_raza": {
+   "pares": 541546,
+   "falsa_coincidencia_posible (>=30 %)": 0.010549427010817179,
+   "falsa_coincidencia_probable (>=50 %)": 0.004917403138422221,
+   "falsa_coincidencia_muy probable (>=70 %)": 0.0019388934642671166
+  }
+ },
+ "PI-12": {
+  "fotos": 200,
+  "perros_en_fotos": 423,
+  "aceptadas_como_perro": 0.96,
+  "razas": [
+   [
+    "Otro",
+    129
+   ],
+   [
+    "Labrador Retriever",
+    10
+   ],
+   [
+    "Beagle",
+    10
+   ],
+   [
+    "Pug",
+    9
+   ],
+   [
+    "rechazada",
+    8
+   ]
+  ],
+  "foto_grupal_encuentra_a_uno_de_sus_perros_top1": 0.875,
+  "foto_grupal_top5": 0.965,
+  "foto_grupal_top1_es_el_perro_mas_grande": 0.63,
+  "perro_individual_encuentra_la_foto_grupal_top1": 0.6903073286052009,
+  "perro_individual_top5": 0.8132387706855791,
+  "perro_mas_grande_top1": 0.795,
+  "perro_secundario_top1": 0.5964125560538116,
+  "distractores": 1657,
+  "ms_por_imagen": 12.2
+ },
+ "PI-13": {
+  "ave": {
+   "n": 17,
+   "rechazadas": 16,
+   "tasa_rechazo": 0.9411764705882353,
+   "tipo": [
+    [
+     "animal",
+     15
+    ],
+    [
+     "objeto",
+     1
+    ],
+    [
+     "perro (error)",
+     1
+    ]
+   ]
+  },
+  "caballo": {
+   "n": 44,
+   "rechazadas": 43,
+   "tasa_rechazo": 0.9772727272727273,
+   "tipo": [
+    [
+     "animal",
+     41
+    ],
+    [
+     "objeto",
+     2
+    ],
+    [
+     "perro (error)",
+     1
+    ]
+   ]
+  },
+  "cebra": {
+   "n": 46,
+   "rechazadas": 46,
+   "tasa_rechazo": 1.0,
+   "tipo": [
+    [
+     "animal",
+     46
+    ]
+   ]
+  },
+  "elefante": {
+   "n": 57,
+   "rechazadas": 56,
+   "tasa_rechazo": 0.9824561403508771,
+   "tipo": [
+    [
+     "animal",
+     54
+    ],
+    [
+     "peluche",
+     1
+    ],
+    [
+     "perro (error)",
+     1
+    ]
+   ]
+  },
+  "gato": {
+   "n": 60,
+   "rechazadas": 59,
+   "tasa_rechazo": 0.9833333333333333,
+   "tipo": [
+    [
+     "gato",
+     58
+    ],
+    [
+     "perro (error)",
+     1
+    ],
+    [
+     "objeto",
+     1
+    ]
+   ]
+  },
+  "jirafa": {
+   "n": 44,
+   "rechazadas": 44,
+   "tasa_rechazo": 1.0,
+   "tipo": [
+    [
+     "animal",
+     44
+    ]
+   ]
+  },
+  "oso": {
+   "n": 34,
+   "rechazadas": 28,
+   "tasa_rechazo": 0.8235294117647058,
+   "tipo": [
+    [
+     "animal",
+     27
+    ],
+    [
+     "perro (error)",
+     6
+    ],
+    [
+     "objeto",
+     1
+    ]
+   ]
+  },
+  "oveja": {
+   "n": 25,
+   "rechazadas": 21,
+   "tasa_rechazo": 0.84,
+   "tipo": [
+    [
+     "animal",
+     19
+    ],
+    [
+     "perro (error)",
+     4
+    ],
+    [
+     "objeto",
+     2
+    ]
+   ]
+  },
+  "vaca": {
+   "n": 33,
+   "rechazadas": 21,
+   "tasa_rechazo": 0.6363636363636364,
+   "tipo": [
+    [
+     "animal",
+     18
+    ],
+    [
+     "perro (error)",
+     12
+    ],
+    [
+     "objeto",
+     3
+    ]
+   ]
+  },
+  "total": {
+   "n": 360,
+   "rechazadas": 334,
+   "tasa_rechazo": 0.9277777777777778
+  }
+ },
+ "PI-14": {
+  "escenas": {
+   "n": 150,
+   "rechazadas": 148,
+   "tasa_rechazo": 0.9866666666666667,
+   "tipo": [
+    [
+     "objeto",
+     145
+    ],
+    [
+     "animal",
+     3
+    ],
+    [
+     "perro (error)",
+     2
+    ]
+   ]
+  },
+  "personas": {
+   "n": 150,
+   "rechazadas": 145,
+   "tasa_rechazo": 0.9666666666666667,
+   "tipo": [
+    [
+     "objeto",
+     142
+    ],
+    [
+     "perro (error)",
+     5
+    ],
+    [
+     "animal",
+     3
+    ]
+   ]
+  },
+  "total": {
+   "n": 300,
+   "rechazadas": 293,
+   "tasa_rechazo": 0.9766666666666667
+  }
+ },
+ "PI-15": {
+  "peluche": {
+   "n": 48,
+   "rechazadas": 48,
+   "tasa_rechazo": 1.0,
+   "tipo": [
+    [
+     "peluche",
+     45
+    ],
+    [
+     "objeto",
+     2
+    ],
+    [
+     "gato",
+     1
+    ]
+   ]
+  },
+  "silla": {
+   "n": 31,
+   "rechazadas": 29,
+   "tasa_rechazo": 0.9354838709677419,
+   "tipo": [
+    [
+     "objeto",
+     28
+    ],
+    [
+     "perro (error)",
+     2
+    ],
+    [
+     "peluche",
+     1
+    ]
+   ]
+  },
+  "total": {
+   "n": 79,
+   "rechazadas": 77,
+   "tasa_rechazo": 0.9746835443037974
+  }
+ },
+ "PI-16": {
+  "casos": [
+   {
+    "caso": "JPEG truncado (corrupto)",
+    "http": 200,
+    "correcto": true,
+    "detalle": "procesada"
+   },
+   {
+    "caso": "bytes aleatorios con extension .jpg",
+    "http": 400,
+    "correcto": true,
+    "detalle": "No se pudo decodificar la imagen: cannot identify image file <_io.BytesIO object at 0x0000019C168CC590>"
+   },
+   {
+    "caso": "archivo de texto",
+    "http": 400,
+    "correcto": true,
+    "detalle": "'c.txt' no es una imagen (text/plain)"
+   },
+   {
+    "caso": "PDF",
+    "http": 400,
+    "correcto": true,
+    "detalle": "'d.pdf' no es una imagen (application/pdf)"
+   },
+   {
+    "caso": "HEIC (formato no admitido)",
+    "http": 400,
+    "correcto": true,
+    "detalle": "No se pudo decodificar la imagen: cannot identify image file <_io.BytesIO object at 0x0000019C168CCFE0>"
+   },
+   {
+    "caso": "archivo vacio",
+    "http": 400,
+    "correcto": true,
+    "detalle": "'f.jpg' esta vacio"
+   },
+   {
+    "caso": "imagen de 20.3 MB (> 5 MB)",
+    "http": 400,
+    "correcto": true,
+    "detalle": "'g.png' supera el tamano maximo"
+   },
+   {
+    "caso": "PNG valido",
+    "http": 200,
+    "correcto": true,
+    "detalle": "procesada"
+   },
+   {
+    "caso": "WEBP valido",
+    "http": 200,
+    "correcto": true,
+    "detalle": "procesada"
+   },
+   {
+    "caso": "GIF valido",
+    "http": 200,
+    "correcto": true,
+    "detalle": "procesada"
+   },
+   {
+    "caso": "JPEG valido",
+    "http": 200,
+    "correcto": true,
+    "detalle": "procesada"
+   },
+   {
+    "caso": "9 imagenes en una peticion (max 8)",
+    "http": 400,
+    "correcto": true,
+    "detalle": "Maximo 8 imagenes por peticion"
+   },
+   {
+    "caso": "servicio sigue vivo despues de los errores",
+    "http": 200,
+    "correcto": true,
+    "detalle": "ok"
+   }
+  ],
+  "correctos": 13,
+  "total": 13
+ },
+ "PI-17": {
+  "dev": {
+   "pares_mismo_perro": 5563,
+   "pares_perros_distintos": 526433,
+   "coseno_medio_mismo": 0.6561732888221741,
+   "coseno_medio_distintos": 0.24323655664920807,
+   "umbrales": [
+    {
+     "coseno": 0.6,
+     "confianza": 0.011,
+     "TPR_mismo_perro": 0.6749955060219306,
+     "FPR_perros_distintos": 0.003639589463426495
+    },
+    {
+     "coseno": 0.65,
+     "confianza": 0.048,
+     "TPR_mismo_perro": 0.5583318353406436,
+     "FPR_perros_distintos": 0.001056164792100799
+    },
+    {
+     "coseno": 0.7,
+     "confianza": 0.193,
+     "TPR_mismo_perro": 0.42459104799568576,
+     "FPR_perros_distintos": 0.0002507441592757293
+    },
+    {
+     "coseno": 0.719,
+     "confianza": 0.3,
+     "TPR_mismo_perro": 0.3783929534423872,
+     "FPR_perros_distintos": 0.00012537207963786464
+    },
+    {
+     "coseno": 0.746,
+     "confianza": 0.5,
+     "TPR_mismo_perro": 0.31116304152435736,
+     "FPR_perros_distintos": 6.268603981893232e-05
+    },
+    {
+     "coseno": 0.75,
+     "confianza": 0.528,
+     "TPR_mismo_perro": 0.30109653064893044,
+     "FPR_perros_distintos": 4.938900106946183e-05
+    },
+    {
+     "coseno": 0.774,
+     "confianza": 0.7,
+     "TPR_mismo_perro": 0.24896638504404098,
+     "FPR_perros_distintos": 1.5196615713680563e-05
+    },
+    {
+     "coseno": 0.8,
+     "confianza": 0.84,
+     "TPR_mismo_perro": 0.19198274312421357,
+     "FPR_perros_distintos": 7.5983078568402815e-06
+    },
+    {
+     "coseno": 0.85,
+     "confianza": 0.961,
+     "TPR_mismo_perro": 0.09814848103541254,
+     "FPR_perros_distintos": 0.0
+    },
+    {
+     "coseno": 0.9,
+     "confianza": 0.991,
+     "TPR_mismo_perro": 0.03253640122236204,
+     "FPR_perros_distintos": 0.0
+    }
+   ],
+   "EER": {
+    "coseno": 0.42,
+    "tasa": 0.08252337856884884
+   },
+   "umbral_FPR_1pct": {
+    "coseno": 0.5549999999999999,
+    "TPR": 0.751033614955959
+   },
+   "AUC": 0.9737287276571108
+  },
+  "test": {
+   "pares_mismo_perro": 1886,
+   "pares_perros_distintos": 193114,
+   "coseno_medio_mismo": 0.617655873298645,
+   "coseno_medio_distintos": 0.22482548654079437,
+   "umbrales": [
+    {
+     "coseno": 0.6,
+     "confianza": 0.011,
+     "TPR_mismo_perro": 0.5678685047720042,
+     "FPR_perros_distintos": 0.002780740909514587
+    },
+    {
+     "coseno": 0.65,
+     "confianza": 0.048,
+     "TPR_mismo_perro": 0.43584305408271473,
+     "FPR_perros_distintos": 0.0008285261555350726
+    },
+    {
+     "coseno": 0.7,
+     "confianza": 0.193,
+     "TPR_mismo_perro": 0.2963944856839873,
+     "FPR_perros_distintos": 0.00018124009652329713
+    },
+    {
+     "coseno": 0.719,
+     "confianza": 0.3,
+     "TPR_mismo_perro": 0.24708377518557795,
+     "FPR_perros_distintos": 0.00013463550027444928
+    },
+    {
+     "coseno": 0.746,
+     "confianza": 0.5,
+     "TPR_mismo_perro": 0.18875927889713678,
+     "FPR_perros_distintos": 5.1782884720942035e-05
+    },
+    {
+     "coseno": 0.75,
+     "confianza": 0.528,
+     "TPR_mismo_perro": 0.18504772004241782,
+     "FPR_perros_distintos": 3.624801930465942e-05
+    },
+    {
+     "coseno": 0.774,
+     "confianza": 0.7,
+     "TPR_mismo_perro": 0.1325556733828208,
+     "FPR_perros_distintos": 1.0356576944188407e-05
+    },
+    {
+     "coseno": 0.8,
+     "confianza": 0.84,
+     "TPR_mismo_perro": 0.08271474019088017,
+     "FPR_perros_distintos": 5.178288472094203e-06
+    },
+    {
+     "coseno": 0.85,
+     "confianza": 0.961,
+     "TPR_mismo_perro": 0.029692470837751856,
+     "FPR_perros_distintos": 0.0
+    },
+    {
+     "coseno": 0.9,
+     "confianza": 0.991,
+     "TPR_mismo_perro": 0.007953340402969246,
+     "FPR_perros_distintos": 0.0
+    }
+   ],
+   "EER": {
+    "coseno": 0.41,
+    "tasa": 0.06995489375771985
+   },
+   "umbral_FPR_1pct": {
+    "coseno": 0.5399999999999999,
+    "TPR": 0.7195121951219512
+   },
+   "AUC": 0.9805024095185794
+  }
+ },
+ "PI-18": {
+  "n": 1657,
+  "identica_coseno_min": 0.9999995231628418,
+  "recomprimida_coseno_min": 0.8060635924339294,
+  "recomprimida_coseno_p01": 0.8738940358161926,
+  "recorte_3pct_coseno_min": 0.6670015454292297,
+  "otra_foto_mismo_perro_coseno_max": 0.9823015928268433,
+  "otra_foto_mismo_perro_p99": 0.9573600888252258,
+  "otro_perro_coseno_max": 0.8223246932029724,
+  "regla_duplicado": "coseno >= 0.97",
+  "duplicados_detectados_identica": 1.0,
+  "duplicados_detectados_recomprimida": 0.471937235968618,
+  "duplicados_detectados_recorte": 0.11647555823777912,
+  "falsos_duplicados_otra_foto": 0.003621001810500905
+ },
+ "PI-19": [
+  {
+   "n_consultas": 104,
+   "top1": 0.8269230769230769,
+   "top5": 0.9423076923076923,
+   "mAP": 0.6945267827214602,
+   "registros": 521,
+   "ms_busqueda_por_consulta_vectorizada": 0.162,
+   "ms_busqueda_bucle_1_a_1_estimado": 2.7,
+   "falsa_alarma_posible (>=30 %)_perro_sin_registro": 0.0673076923076923,
+   "falsa_alarma_probable (>=50 %)_perro_sin_registro": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)_perro_sin_registro": 0.009615384615384616
+  },
+  {
+   "n_consultas": 104,
+   "top1": 0.8269230769230769,
+   "top5": 0.9423076923076923,
+   "mAP": 0.6857169045830301,
+   "registros": 1021,
+   "ms_busqueda_por_consulta_vectorizada": 0.192,
+   "ms_busqueda_bucle_1_a_1_estimado": 5.3,
+   "falsa_alarma_posible (>=30 %)_perro_sin_registro": 0.0673076923076923,
+   "falsa_alarma_probable (>=50 %)_perro_sin_registro": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)_perro_sin_registro": 0.009615384615384616
+  },
+  {
+   "n_consultas": 104,
+   "top1": 0.8173076923076923,
+   "top5": 0.9423076923076923,
+   "mAP": 0.6744205298578864,
+   "registros": 2521,
+   "ms_busqueda_por_consulta_vectorizada": 0.46,
+   "ms_busqueda_bucle_1_a_1_estimado": 8.0,
+   "falsa_alarma_posible (>=30 %)_perro_sin_registro": 0.0673076923076923,
+   "falsa_alarma_probable (>=50 %)_perro_sin_registro": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)_perro_sin_registro": 0.009615384615384616
+  },
+  {
+   "n_consultas": 104,
+   "top1": 0.8173076923076923,
+   "top5": 0.9423076923076923,
+   "mAP": 0.6649165490909864,
+   "registros": 5521,
+   "ms_busqueda_por_consulta_vectorizada": 0.508,
+   "ms_busqueda_bucle_1_a_1_estimado": 12.1,
+   "falsa_alarma_posible (>=30 %)_perro_sin_registro": 0.07692307692307693,
+   "falsa_alarma_probable (>=50 %)_perro_sin_registro": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)_perro_sin_registro": 0.009615384615384616
+  },
+  {
+   "n_consultas": 104,
+   "top1": 0.8173076923076923,
+   "top5": 0.9230769230769231,
+   "mAP": 0.6547419216723325,
+   "registros": 10521,
+   "ms_busqueda_por_consulta_vectorizada": 1.145,
+   "ms_busqueda_bucle_1_a_1_estimado": 34.1,
+   "falsa_alarma_posible (>=30 %)_perro_sin_registro": 0.07692307692307693,
+   "falsa_alarma_probable (>=50 %)_perro_sin_registro": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)_perro_sin_registro": 0.009615384615384616
+  },
+  {
+   "n_consultas": 104,
+   "top1": 0.8076923076923077,
+   "top5": 0.9134615384615384,
+   "mAP": 0.6361453855708693,
+   "registros": 20824,
+   "ms_busqueda_por_consulta_vectorizada": 1.504,
+   "ms_busqueda_bucle_1_a_1_estimado": 113.9,
+   "falsa_alarma_posible (>=30 %)_perro_sin_registro": 0.07692307692307693,
+   "falsa_alarma_probable (>=50 %)_perro_sin_registro": 0.038461538461538464,
+   "falsa_alarma_muy probable (>=70 %)_perro_sin_registro": 0.009615384615384616
+  }
+ ],
+ "EDAD": {
+  "fuente": "Open Images V7 test (nunca usado para entrenar)",
+  "fotos": 1023,
+  "aceptadas_como_perro": 0.9980449657869013,
+  "umbral_P_cachorro": 0.21,
+  "n_cachorros": 317,
+  "n_adultos": 704,
+  "matriz": {
+   "cachorro_como_cachorro": 205,
+   "cachorro_como_adulto": 112,
+   "adulto_como_cachorro": 135,
+   "adulto_como_adulto": 569
+  },
+  "recall_cachorro": 0.6466876971608833,
+  "recall_adulto": 0.8082386363636364,
+  "exactitud": 0.7580803134182175,
+  "exactitud_balanceada": 0.7274631667622597,
+  "ms_por_imagen_describe": 20.49
+ },
+ "TIEMPO": {
+  "imagen_prueba": "foto 1200x1600 px (JPEG 216 KB)",
+  "cuda": {
+   "ms_mediana": 232.6,
+   "ms_p90": 290.4
+  },
+  "cpu": {
+   "ms_mediana": 403.1,
+   "ms_p90": 754.5
+  }
+ }
+}

@@ -1,0 +1,377 @@
+.solicitudes-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.solicitudes-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: end;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.solicitudes-hero span {
+  color: var(--primary-light);
+  font-weight: 700;
+}
+
+.solicitudes-hero h1 {
+  margin: 6px 0;
+  color: var(--primary);
+  font-size: 2.4rem;
+}
+
+.solicitudes-hero p {
+  color: var(--text-soft);
+  max-width: 560px;
+}
+
+.solicitudes-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.solicitudes-stats button {
+  min-width: 110px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.solicitudes-stats button:hover,
+.solicitudes-stats button.active {
+  transform: translateY(-1px);
+  border-color: var(--primary);
+  background: #f8fbff;
+}
+
+.solicitudes-stats strong {
+  display: block;
+  color: var(--primary);
+  font-size: 1.45rem;
+}
+
+.solicitudes-stats span {
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.request-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.request-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(11, 90, 151, 0.14);
+}
+
+.request-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--primary-light);
+}
+
+.request-card-approved::before {
+  background: #2e7d32;
+}
+
+.request-card-rejected::before {
+  background: #c62828;
+}
+
+.request-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.request-pet-image {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+}
+
+.request-eyebrow {
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.request-card h3 {
+  margin: 4px 0 0;
+  color: var(--text);
+}
+
+.request-card-top small {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-soft);
+  font-size: 0.84rem;
+}
+
+.status-pill {
+  align-self: start;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.status-pill.pending {
+  color: #8a5a00;
+  background: #fff3cd;
+}
+
+.status-pill.approved {
+  color: #1b5e20;
+  background: #dcfce7;
+}
+
+.status-pill.rejected {
+  color: #b71c1c;
+  background: #fee2e2;
+}
+
+.request-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.request-meta-grid div {
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+}
+
+.request-meta-grid span {
+  display: block;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+}
+
+.request-message {
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.request-contact,
+.request-notes {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.request-contact span {
+  display: block;
+}
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.empty-panel {
+  grid-column: 1 / -1;
+  padding: 34px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px dashed var(--border-strong);
+  text-align: center;
+}
+
+.empty-panel h2 {
+  color: var(--primary);
+}
+
+.empty-panel p {
+  color: var(--text-soft);
+}
+
+.request-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(17, 24, 39, 0.48);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.request-modal {
+  width: min(720px, 100%);
+  max-height: 88vh;
+  overflow: auto;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+}
+
+.request-modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.request-modal-header span {
+  color: var(--primary-light);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.request-modal-header h2 {
+  margin-top: 4px;
+  color: var(--primary);
+}
+
+.request-modal-header button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.request-modal-body {
+  padding: 22px;
+}
+
+.request-modal-image {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.request-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.request-detail-grid div,
+.request-modal-message {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+}
+
+.request-detail-grid span,
+.request-modal-message span {
+  display: block;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.request-detail-grid strong,
+.request-modal-message p {
+  color: var(--text);
+  word-break: break-word;
+}
+
+.request-modal-message {
+  margin-top: 12px;
+}
+
+.adoption-case-board {
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.adoption-case-board span {
+  display: block;
+  color: var(--primary);
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.adoption-case-board p {
+  color: var(--text-soft);
+  margin: 0 0 10px;
+}
+
+.adoption-case-board div {
+  margin-top: 6px;
+  color: var(--text);
+}
+
+.request-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 22px 20px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 800px) {
+  .solicitudes-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .solicitudes-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .request-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .request-modal-actions {
+    flex-direction: column-reverse;
+  }
+}
+
+.request-contact-intro {
+  margin-bottom: 14px;
+  color: var(--text-soft);
+}

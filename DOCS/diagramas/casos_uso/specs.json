@@ -1,0 +1,516 @@
+{
+ "CU_usuario_general": {
+  "actor": "Usuario|general",
+  "ucs": [
+   {
+    "id": "CU-01",
+    "name": "Registrarse en la plataforma"
+   },
+   {
+    "id": "CU-02",
+    "name": "Iniciar sesión"
+   },
+   {
+    "id": "CU-25",
+    "name": "Gestionar perfil"
+   },
+   {
+    "id": "CU-27",
+    "name": "Consultar notificaciones"
+   },
+   {
+    "id": "CU-03",
+    "name": "Consultar perros en adopción"
+   },
+   {
+    "id": "CU-06",
+    "name": "Consultar solicitudes realizadas"
+   },
+   {
+    "id": "CU-09",
+    "name": "Solicitar autorización para publicar"
+   },
+   {
+    "id": "CU-12",
+    "name": "Gestionar perros en adopción"
+   },
+   {
+    "id": "CU-15",
+    "name": "Revisar solicitudes de adopción"
+   },
+   {
+    "id": "CU-10",
+    "name": "Publicar perro en adopción autorizado"
+   },
+   {
+    "id": "CU-07",
+    "name": "Registrar reporte de perro extraviado"
+   },
+   {
+    "id": "CU-08",
+    "name": "Registrar reporte de perro encontrado"
+   },
+   {
+    "id": "CU-29",
+    "name": "Consultar reportes de perros perdidos y encontrados"
+   },
+   {
+    "id": "CU-33",
+    "name": "Gestionar mis reportes"
+   },
+   {
+    "id": "CU-34",
+    "name": "Revisar avisos recibidos"
+   },
+   {
+    "id": "CU-28",
+    "name": "Dar seguimiento a casos"
+   },
+   {
+    "id": "CU-04",
+    "name": "Filtrar publicaciones"
+   },
+   {
+    "id": "CU-05",
+    "name": "Realizar solicitud de adopción"
+   },
+   {
+    "id": "CU-26",
+    "name": "Cancelar solicitud de adopción"
+   },
+   {
+    "id": "CU-13",
+    "name": "Editar publicación"
+   },
+   {
+    "id": "CU-14",
+    "name": "Eliminar o desactivar publicación"
+   },
+   {
+    "id": "CU-16",
+    "name": "Aprobar solicitud y contactar al adoptante"
+   },
+   {
+    "id": "CU-17",
+    "name": "Rechazar solicitud de adopción"
+   },
+   {
+    "id": "CU-41",
+    "name": "Analizar fotografía con la red neuronal"
+   },
+   {
+    "id": "CU-31",
+    "name": "Consultar coincidencias sugeridas"
+   },
+   {
+    "id": "CU-30",
+    "name": "Enviar aviso de avistamiento"
+   },
+   {
+    "id": "CU-42",
+    "name": "Cerrar caso"
+   },
+   {
+    "id": "CU-35",
+    "name": "Consultar recomendaciones por raza"
+   },
+   {
+    "id": "CU-32",
+    "name": "Validar o rechazar coincidencia"
+   }
+  ],
+  "col1": [
+   "CU-01",
+   "CU-02",
+   "CU-25",
+   "CU-27",
+   "CU-03",
+   "CU-06",
+   "CU-09",
+   "CU-12",
+   "CU-15",
+   "CU-10",
+   "CU-07",
+   "CU-08",
+   "CU-29",
+   "CU-33",
+   "CU-34",
+   "CU-28"
+  ],
+  "anchor": {
+   "CU-04": "CU-03",
+   "CU-05": "CU-03",
+   "CU-26": "CU-06",
+   "CU-13": "CU-12",
+   "CU-14": "CU-12",
+   "CU-16": "CU-15",
+   "CU-17": "CU-15",
+   "CU-41": "CU-07",
+   "CU-31": "CU-08",
+   "CU-30": "CU-29",
+   "CU-42": "CU-28"
+  },
+  "below": {
+   "CU-35": "CU-16",
+   "CU-32": "CU-31"
+  },
+  "rels": [
+   [
+    "CU-04",
+    "CU-03",
+    "extend"
+   ],
+   [
+    "CU-05",
+    "CU-03",
+    "extend"
+   ],
+   [
+    "CU-26",
+    "CU-06",
+    "extend"
+   ],
+   [
+    "CU-13",
+    "CU-12",
+    "extend"
+   ],
+   [
+    "CU-14",
+    "CU-12",
+    "extend"
+   ],
+   [
+    "CU-16",
+    "CU-15",
+    "extend"
+   ],
+   [
+    "CU-17",
+    "CU-15",
+    "extend"
+   ],
+   [
+    "CU-16",
+    "CU-35",
+    "include"
+   ],
+   [
+    "CU-10",
+    "CU-41",
+    "include"
+   ],
+   [
+    "CU-07",
+    "CU-41",
+    "include"
+   ],
+   [
+    "CU-08",
+    "CU-41",
+    "include",
+    0.3
+   ],
+   [
+    "CU-07",
+    "CU-31",
+    "include",
+    0.3
+   ],
+   [
+    "CU-08",
+    "CU-31",
+    "include"
+   ],
+   [
+    "CU-32",
+    "CU-31",
+    "extend"
+   ],
+   [
+    "CU-30",
+    "CU-29",
+    "extend"
+   ],
+   [
+    "CU-42",
+    "CU-28",
+    "extend"
+   ]
+  ],
+  "note": [
+   "CU-10, CU-12 y CU-15 requieren",
+   "autorización vigente del",
+   "Administrador (RN-07)."
+  ]
+ },
+ "CU_refugio": {
+  "actor": "Refugio",
+  "ucs": [
+   {
+    "id": "CU-02",
+    "name": "Iniciar sesión"
+   },
+   {
+    "id": "CU-25",
+    "name": "Gestionar perfil"
+   },
+   {
+    "id": "CU-27",
+    "name": "Consultar notificaciones"
+   },
+   {
+    "id": "CU-11",
+    "name": "Publicar perro en adopción"
+   },
+   {
+    "id": "CU-08",
+    "name": "Registrar reporte de perro encontrado"
+   },
+   {
+    "id": "CU-12",
+    "name": "Gestionar perros en adopción"
+   },
+   {
+    "id": "CU-15",
+    "name": "Revisar solicitudes de adopción"
+   },
+   {
+    "id": "CU-28",
+    "name": "Dar seguimiento a casos"
+   },
+   {
+    "id": "CU-41",
+    "name": "Analizar fotografía con la red neuronal"
+   },
+   {
+    "id": "CU-31",
+    "name": "Consultar coincidencias sugeridas"
+   },
+   {
+    "id": "CU-13",
+    "name": "Editar publicación"
+   },
+   {
+    "id": "CU-14",
+    "name": "Eliminar o desactivar publicación"
+   },
+   {
+    "id": "CU-16",
+    "name": "Aprobar solicitud y contactar al adoptante"
+   },
+   {
+    "id": "CU-17",
+    "name": "Rechazar solicitud de adopción"
+   },
+   {
+    "id": "CU-42",
+    "name": "Cerrar caso"
+   },
+   {
+    "id": "CU-32",
+    "name": "Validar o rechazar coincidencia"
+   },
+   {
+    "id": "CU-35",
+    "name": "Consultar recomendaciones por raza"
+   },
+   {
+    "id": "CU-33",
+    "name": "Gestionar mis reportes"
+   },
+   {
+    "id": "CU-34",
+    "name": "Revisar avisos recibidos"
+   }
+  ],
+  "col1": [
+   "CU-02",
+   "CU-25",
+   "CU-27",
+   "CU-11",
+   "CU-08",
+   "CU-33",
+   "CU-34",
+   "CU-12",
+   "CU-15",
+   "CU-28"
+  ],
+  "anchor": {
+   "CU-41": "CU-11",
+   "CU-31": "CU-08",
+   "CU-13": "CU-12",
+   "CU-14": "CU-12",
+   "CU-16": "CU-15",
+   "CU-17": "CU-15",
+   "CU-42": "CU-28"
+  },
+  "below": {
+   "CU-32": "CU-31",
+   "CU-35": "CU-16"
+  },
+  "rels": [
+   [
+    "CU-11",
+    "CU-41",
+    "include"
+   ],
+   [
+    "CU-08",
+    "CU-41",
+    "include"
+   ],
+   [
+    "CU-08",
+    "CU-31",
+    "include"
+   ],
+   [
+    "CU-32",
+    "CU-31",
+    "extend"
+   ],
+   [
+    "CU-13",
+    "CU-12",
+    "extend"
+   ],
+   [
+    "CU-14",
+    "CU-12",
+    "extend"
+   ],
+   [
+    "CU-16",
+    "CU-15",
+    "extend"
+   ],
+   [
+    "CU-17",
+    "CU-15",
+    "extend"
+   ],
+   [
+    "CU-16",
+    "CU-35",
+    "include"
+   ],
+   [
+    "CU-42",
+    "CU-28",
+    "extend"
+   ]
+  ]
+ },
+ "CU_administrador": {
+  "actor": "Administrador",
+  "ucs": [
+   {
+    "id": "CU-02",
+    "name": "Iniciar sesión"
+   },
+   {
+    "id": "CU-39",
+    "name": "Consultar reporte general"
+   },
+   {
+    "id": "CU-19",
+    "name": "Supervisar publicaciones"
+   },
+   {
+    "id": "CU-20",
+    "name": "Administrar usuarios"
+   },
+   {
+    "id": "CU-22",
+    "name": "Autorizar publicación a Usuario general"
+   },
+   {
+    "id": "CU-36",
+    "name": "Crear usuario"
+   },
+   {
+    "id": "CU-37",
+    "name": "Activar, desactivar o eliminar cuenta"
+   },
+   {
+    "id": "CU-21",
+    "name": "Administrar contenido"
+   },
+   {
+    "id": "CU-23",
+    "name": "Moderar reportes"
+   },
+   {
+    "id": "CU-24",
+    "name": "Eliminar o desactivar contenido inapropiado"
+   },
+   {
+    "id": "CU-38",
+    "name": "Supervisar solicitudes de adopción y casos"
+   },
+   {
+    "id": "CU-40",
+    "name": "Administrar red neuronal"
+   },
+   {
+    "id": "CU-41",
+    "name": "Analizar fotografía con la red neuronal"
+   }
+  ],
+  "col1": [
+   "CU-02",
+   "CU-39",
+   "CU-19",
+   "CU-20",
+   "CU-21",
+   "CU-40"
+  ],
+  "anchor": {
+   "CU-22": "CU-20",
+   "CU-36": "CU-20",
+   "CU-37": "CU-20",
+   "CU-23": "CU-21",
+   "CU-24": "CU-21",
+   "CU-38": "CU-21",
+   "CU-41": "CU-40"
+  },
+  "rels": [
+   [
+    "CU-22",
+    "CU-20",
+    "extend"
+   ],
+   [
+    "CU-36",
+    "CU-20",
+    "extend"
+   ],
+   [
+    "CU-37",
+    "CU-20",
+    "extend"
+   ],
+   [
+    "CU-23",
+    "CU-21",
+    "extend"
+   ],
+   [
+    "CU-24",
+    "CU-21",
+    "extend"
+   ],
+   [
+    "CU-38",
+    "CU-21",
+    "extend"
+   ],
+   [
+    "CU-40",
+    "CU-41",
+    "include"
+   ]
+  ]
+ }
+}

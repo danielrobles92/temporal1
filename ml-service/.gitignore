@@ -1,0 +1,17 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Configuracion local
+.env
+
+# Cache de pesos descargados por torchvision (no versionar)
+.cache/
+*.pth

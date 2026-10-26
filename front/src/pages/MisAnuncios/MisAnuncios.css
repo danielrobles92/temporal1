@@ -1,0 +1,443 @@
+.mis-anuncios-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.anuncios-section {
+  margin-top: 22px;
+}
+
+.mis-anuncios-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.mis-anuncios-tabs button {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 14px;
+  background: var(--surface-soft);
+  color: var(--primary-dark);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.mis-anuncios-tabs button.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--text-on-primary);
+}
+
+.anuncios-section h2 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.section-title-row h2 {
+  margin-bottom: 0;
+}
+
+.section-title-row .btn {
+  flex: 0 0 auto;
+  width: auto !important;
+  min-width: 110px;
+  max-width: 120px;
+  min-height: 36px;
+  padding: 8px 14px;
+  line-height: 1;
+  text-align: center;
+}
+
+.anuncios-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.anuncio-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.anuncio-image {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #dbeafe, #ece8c8);
+  border-bottom: 1px solid var(--border);
+}
+
+.anuncio-card-content {
+  padding: 14px 16px 0;
+}
+
+.anuncio-card span {
+  display: block;
+  margin-top: 4px;
+  color: #4b5563;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+.actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 16px 16px;
+}
+
+.anuncio-card > small {
+  display: block;
+  padding: 0 16px 16px;
+  color: #6b7280;
+}
+
+.anuncios-list .empty-state {
+  margin-top: 0;
+  border-radius: var(--radius-sm);
+  border-color: var(--border-strong);
+  color: var(--text-soft);
+}
+
+.sighting-card {
+  cursor: pointer;
+}
+
+.sighting-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mis-anuncios-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(17, 24, 39, 0.46);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.mis-anuncios-modal {
+  width: min(980px, 100%);
+  max-height: 88vh;
+  overflow: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+}
+
+.mis-anuncios-modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  border-bottom: 1px solid #d9d6b8;
+  background: linear-gradient(135deg, #fffbe8, #ffffff);
+}
+
+.mis-anuncios-modal-header span {
+  color: var(--primary-light);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.mis-anuncios-modal-header h2 {
+  margin: 4px 0 0;
+  color: var(--primary);
+}
+
+.mis-anuncios-modal-header button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--primary-dark);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.mis-anuncios-modal-body {
+  display: grid;
+  gap: 14px;
+  padding: 22px 24px 24px;
+}
+
+.sighting-images {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sighting-images img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.sighting-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sighting-detail-grid div,
+.sighting-message {
+  padding: 12px;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.sighting-detail-grid span,
+.sighting-message span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.sighting-message p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.sighting-case-board {
+  padding: 14px;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.sighting-case-board span {
+  display: block;
+  color: var(--primary);
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.sighting-case-board p {
+  margin: 0 0 10px;
+  color: var(--text-soft);
+}
+
+.sighting-case-board div {
+  margin-top: 6px;
+}
+
+.report-detail-modal {
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+
+.report-detail-modal .sighting-message {
+  grid-column: 1 / -1;
+}
+
+.report-detail-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.pet-detail-modal {
+  width: min(920px, 100%);
+}
+
+.pet-detail-body {
+  grid-template-columns: minmax(280px, 1.1fr) minmax(0, 0.9fr);
+  align-items: start;
+}
+
+.pet-detail-main-image {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.pet-detail-gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.pet-detail-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pet-thumb-button {
+  width: 100%;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pet-thumb-button.active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(11, 90, 151, 0.12);
+}
+
+.pet-thumb-button img {
+  display: block;
+  width: 100%;
+  height: 78px;
+  object-fit: cover;
+}
+
+.pet-detail-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pet-detail-info-grid div {
+  padding: 12px;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.pet-detail-info-grid span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.pet-detail-body .sighting-message {
+  grid-column: 1 / -1;
+}
+
+.edit-pet-modal input,
+.edit-pet-modal select,
+.edit-pet-modal textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 12px;
+  font: inherit;
+}
+
+.edit-images-field small {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+}
+
+.edit-image-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.edit-image-picker {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.edit-main-preview {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.edit-image-preview-grid img {
+  width: 100%;
+  height: 96px;
+  object-fit: cover;
+  border: 1px solid #d9d6b8;
+  border-radius: var(--radius-sm);
+  background: #fffdf2;
+}
+
+.edit-image-preview-grid .pet-thumb-button {
+  border-radius: var(--radius-sm);
+}
+
+.edit-image-preview-grid.single-preview {
+  grid-template-columns: minmax(0, 220px);
+}
+
+.edit-image-preview-grid.single-preview img {
+  height: 140px;
+}
+
+.form-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mis-anuncios-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 24px 24px;
+}
+
+@media (max-width: 760px) {
+  .sighting-images,
+  .sighting-detail-grid,
+  .report-detail-modal,
+  .pet-detail-body,
+  .pet-detail-info-grid,
+  .edit-image-preview-grid,
+  .form-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .mis-anuncios-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .mis-anuncios-modal-actions .btn {
+    width: 100%;
+  }
+}

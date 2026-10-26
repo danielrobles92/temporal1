@@ -1,0 +1,204 @@
+{
+  "kind": "binary",
+  "classes": [
+    "cachorro",
+    "adulto"
+  ],
+  "puppy_max_months": 12.5,
+  "hidden": 256,
+  "init": "dognet_v2_val.pt",
+  "threshold": 0.21,
+  "trained_on": "train",
+  "hyperparameters": {
+    "epochs": 6,
+    "samples_per_epoch": 24000,
+    "batch_size": 48,
+    "optimizer": "AdamW",
+    "lr_backbone": 0.0003,
+    "lr_head": 0.0009,
+    "weight_decay": 0.0001,
+    "scheduler": "OneCycleLR (10 % warmup)",
+    "label_smoothing": 0.05,
+    "mixed_precision": true,
+    "source_mix": {
+      "petfinder_my/cachorro": 0.42,
+      "openimages/cachorro": 0.08,
+      "petfinder_my/adulto": 0.16,
+      "openimages/adulto": 0.08,
+      "dogage/adulto": 0.26
+    }
+  },
+  "n_train": {
+    "petfinder_my/cachorro": 3778,
+    "openimages/cachorro": 289,
+    "petfinder_my/adulto": 1349,
+    "openimages/adulto": 444,
+    "dogage/adulto": 15100
+  },
+  "n_val": 4121,
+  "n_test": 1023,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.4534,
+      "train_acc": 0.7995,
+      "val_balanced_acc@0.5": 0.9038,
+      "seconds": 288
+    },
+    {
+      "epoch": 2,
+      "loss": 0.3238,
+      "train_acc": 0.8892,
+      "val_balanced_acc@0.5": 0.887,
+      "seconds": 464
+    },
+    {
+      "epoch": 3,
+      "loss": 0.2679,
+      "train_acc": 0.9249,
+      "val_balanced_acc@0.5": 0.8982,
+      "seconds": 646
+    },
+    {
+      "epoch": 4,
+      "loss": 0.2284,
+      "train_acc": 0.9442,
+      "val_balanced_acc@0.5": 0.9076,
+      "seconds": 824
+    },
+    {
+      "epoch": 5,
+      "loss": 0.1957,
+      "train_acc": 0.9609,
+      "val_balanced_acc@0.5": 0.9063,
+      "seconds": 997
+    },
+    {
+      "epoch": 6,
+      "loss": 0.1869,
+      "train_acc": 0.9677,
+      "val_balanced_acc@0.5": 0.9114,
+      "seconds": 1196
+    }
+  ],
+  "train_seconds": 1196,
+  "eval_seconds_per_image": 0.04902,
+  "val_metrics": {
+    "petfinder_my": {
+      "n": 1241,
+      "n_cachorro": 916,
+      "n_adulto": 325,
+      "confusion": {
+        "cachorro_como_cachorro": 858,
+        "cachorro_como_adulto": 58,
+        "adulto_como_cachorro": 152,
+        "adulto_como_adulto": 173
+      },
+      "accuracy": 0.8308,
+      "recall_cachorro": 0.9367,
+      "recall_adulto": 0.5323,
+      "balanced_accuracy": 0.7345,
+      "precision_cachorro": 0.8495,
+      "auc": 0.8838
+    },
+    "dogage_petfinder": {
+      "n": 2015,
+      "n_cachorro": 0,
+      "n_adulto": 2015,
+      "confusion": {
+        "cachorro_como_cachorro": 0,
+        "cachorro_como_adulto": 0,
+        "adulto_como_cachorro": 109,
+        "adulto_como_adulto": 1906
+      },
+      "accuracy": 0.9459,
+      "recall_cachorro": null,
+      "recall_adulto": 0.9459
+    },
+    "dogage_expert": {
+      "n": 865,
+      "n_cachorro": 0,
+      "n_adulto": 865,
+      "confusion": {
+        "cachorro_como_cachorro": 0,
+        "cachorro_como_adulto": 0,
+        "adulto_como_cachorro": 47,
+        "adulto_como_adulto": 818
+      },
+      "accuracy": 0.9457,
+      "recall_cachorro": null,
+      "recall_adulto": 0.9457
+    },
+    "petfinder_my_por_edad": {
+      "0-1 meses": {
+        "n": 167,
+        "correctos": 0.982
+      },
+      "2 meses": {
+        "n": 280,
+        "correctos": 0.9893
+      },
+      "3 meses": {
+        "n": 156,
+        "correctos": 0.9936
+      },
+      "4 meses": {
+        "n": 75,
+        "correctos": 0.96
+      },
+      "5-7 meses": {
+        "n": 86,
+        "correctos": 0.907
+      },
+      "8-12 meses": {
+        "n": 152,
+        "correctos": 0.7368
+      },
+      "13-29 meses": {
+        "n": 120,
+        "correctos": 0.3917
+      },
+      "30+ meses": {
+        "n": 205,
+        "correctos": 0.6146
+      }
+    }
+  },
+  "test_metrics": {
+    "openimages": {
+      "n": 1023,
+      "n_cachorro": 317,
+      "n_adulto": 706,
+      "confusion": {
+        "cachorro_como_cachorro": 205,
+        "cachorro_como_adulto": 112,
+        "adulto_como_cachorro": 136,
+        "adulto_como_adulto": 570
+      },
+      "accuracy": 0.7576,
+      "recall_cachorro": 0.6467,
+      "recall_adulto": 0.8074,
+      "balanced_accuracy": 0.727,
+      "precision_cachorro": 0.6012,
+      "auc": 0.7754
+    },
+    "petfinder_my_por_edad": {}
+  },
+  "test_metrics_at_0.5": {
+    "n": 1023,
+    "n_cachorro": 317,
+    "n_adulto": 706,
+    "confusion": {
+      "cachorro_como_cachorro": 167,
+      "cachorro_como_adulto": 150,
+      "adulto_como_cachorro": 90,
+      "adulto_como_adulto": 616
+    },
+    "accuracy": 0.7654,
+    "recall_cachorro": 0.5268,
+    "recall_adulto": 0.8725,
+    "balanced_accuracy": 0.6997,
+    "precision_cachorro": 0.6498,
+    "auc": 0.7754
+  }
+}

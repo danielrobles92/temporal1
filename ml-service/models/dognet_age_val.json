@@ -1,0 +1,178 @@
+{
+  "backbone": "dognet_v2_val.pt",
+  "edges_months": [
+    0.0,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    7.5,
+    12.5,
+    24.0,
+    72.0,
+    180.0
+  ],
+  "hidden": 256,
+  "q_range": [
+    0.2,
+    0.8
+  ],
+  "balance": 0.75,
+  "stage_alpha": 1.0,
+  "trained_on": "train",
+  "epochs": 60,
+  "n_train": {
+    "petfinder_my": 5127,
+    "dogage": 22776
+  },
+  "val_metrics": {
+    "pf_n": 1241,
+    "pf_group_acc": 0.37469783425331116,
+    "pf_group_pm1": 0.7260273694992065,
+    "pf_range_hits": 0.6978243589401245,
+    "pf_mae_months": 13.638678550720215,
+    "pf_median_ae_months": 2.0999999046325684,
+    "pf_puppies_median_ae_months": 1.0,
+    "pf_puppy_vs_adult_acc": 0.8305084705352783,
+    "pf_group_acc_by_group": {
+      "q0-12%": 0.491,
+      "q12-25%": 0.514,
+      "q25-38%": 0.244,
+      "q38-50%": 0.133,
+      "q50-62%": 0.105,
+      "q62-75%": 0.27,
+      "q75-88%": 0.175,
+      "q88-100%": 0.585
+    },
+    "dogage_expert_n": 1088,
+    "dogage_expert_acc3": 0.4117647111415863,
+    "dogage_expert_acc3_old_head": 0.43474265933036804,
+    "dogage_expert_recall3": [
+      0.538,
+      0.508,
+      0.283
+    ],
+    "dogage_expert_range_hits": 0.5891544222831726,
+    "dogage_petfinder_n": 3082,
+    "dogage_petfinder_acc3": 0.5528877377510071,
+    "dogage_petfinder_acc3_old_head": 0.5311486124992371,
+    "dogage_petfinder_recall3": [
+      0.523,
+      0.586,
+      0.444
+    ],
+    "dogage_petfinder_range_hits": 0.7871512174606323
+  },
+  "examples": [
+    {
+      "label": "petfinder_my:q0-12%",
+      "months": 1.8,
+      "min_months": 1.2,
+      "max_months": 2.3,
+      "text": "2 meses",
+      "range_text": "entre 1 y 2 meses",
+      "stage": "cachorro",
+      "stage_confidence": 0.9981
+    },
+    {
+      "label": "petfinder_my:q38-50%",
+      "months": 3.4,
+      "min_months": 2.8,
+      "max_months": 7.1,
+      "text": "3 meses",
+      "range_text": "entre 3 y 7 meses",
+      "stage": "cachorro",
+      "stage_confidence": 0.9181
+    },
+    {
+      "label": "petfinder_my:q88-100%",
+      "months": 110.8,
+      "min_months": 82.8,
+      "max_months": 148.3,
+      "text": "más de 6 años",
+      "range_text": "6 años o más",
+      "stage": "senior",
+      "stage_confidence": 0.9444
+    },
+    {
+      "label": "dogage_expert:cachorro",
+      "months": 8.2,
+      "min_months": 5.6,
+      "max_months": 11.2,
+      "text": "8 meses",
+      "range_text": "entre 6 y 11 meses",
+      "stage": "cachorro",
+      "stage_confidence": 0.938
+    },
+    {
+      "label": "dogage_expert:senior",
+      "months": 44.1,
+      "min_months": 30.3,
+      "max_months": 64.0,
+      "text": "4 años",
+      "range_text": "entre 3 y 5 años",
+      "stage": "adulto",
+      "stage_confidence": 0.8827
+    },
+    {
+      "label": "dogage_petfinder:adulto",
+      "months": 39.2,
+      "min_months": 27.2,
+      "max_months": 56.5,
+      "text": "3 años",
+      "range_text": "entre 2 y 5 años",
+      "stage": "adulto",
+      "stage_confidence": 0.9031
+    },
+    {
+      "label": "dogage_petfinder:adulto",
+      "months": 93.1,
+      "min_months": 47.5,
+      "max_months": 138.3,
+      "text": "más de 6 años",
+      "range_text": "de 4 años en adelante",
+      "stage": "senior",
+      "stage_confidence": 0.695
+    },
+    {
+      "label": "dogage_petfinder:adulto",
+      "months": 10.2,
+      "min_months": 8.2,
+      "max_months": 14.5,
+      "text": "10 meses",
+      "range_text": "entre 8 meses y 1 año",
+      "stage": "cachorro",
+      "stage_confidence": 0.882
+    },
+    {
+      "label": "dogage_petfinder:cachorro",
+      "months": 4.7,
+      "min_months": 2.7,
+      "max_months": 7.0,
+      "text": "5 meses",
+      "range_text": "entre 3 y 7 meses",
+      "stage": "cachorro",
+      "stage_confidence": 0.9024
+    },
+    {
+      "label": "dogage_petfinder:cachorro",
+      "months": 39.2,
+      "min_months": 27.2,
+      "max_months": 56.5,
+      "text": "3 años",
+      "range_text": "entre 2 y 5 años",
+      "stage": "adulto",
+      "stage_confidence": 0.9026
+    },
+    {
+      "label": "dogage_petfinder:senior",
+      "months": 110.4,
+      "min_months": 82.3,
+      "max_months": 148.0,
+      "text": "más de 6 años",
+      "range_text": "6 años o más",
+      "stage": "senior",
+      "stage_confidence": 0.9367
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  overflow-x: hidden;
+}
+
+.main-content-wide {
+  max-width: none;
+  margin: 0;
+  padding: 32px 0 60px;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.loading-spinner {
+  font-size: 1.1rem;
+  color: var(--primary-light);
+}

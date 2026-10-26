@@ -1,0 +1,26 @@
+{
+  "dataset_root": "../../imagesDS/images/Images",
+  "note": "20 razas mas presentes en Mexico. Fuentes: estudio Ring 2023 (via Revista Central), encuesta de popularidad (UnoTV/El Informador), Dogline.mx, FCM/FCI. Imagenes de Stanford Dogs Dataset.",
+  "breeds": [
+    {"name_es": "Chihuahua", "folder": "n02085620-Chihuahua"},
+    {"name_es": "Schnauzer", "folder": "n02097047-miniature_schnauzer"},
+    {"name_es": "Poodle", "folder": "n02113712-miniature_poodle"},
+    {"name_es": "Yorkshire Terrier", "folder": "n02094433-Yorkshire_terrier"},
+    {"name_es": "Pug", "folder": "n02110958-pug"},
+    {"name_es": "Husky Siberiano", "folder": "n02110185-Siberian_husky"},
+    {"name_es": "Labrador Retriever", "folder": "n02099712-Labrador_retriever"},
+    {"name_es": "Pitbull (American Staffordshire)", "folder": "n02093428-American_Staffordshire_terrier"},
+    {"name_es": "Pastor Aleman", "folder": "n02106662-German_shepherd"},
+    {"name_es": "Golden Retriever", "folder": "n02099601-golden_retriever"},
+    {"name_es": "Bulldog Frances", "folder": "n02108915-French_bulldog"},
+    {"name_es": "Pomerania", "folder": "n02112018-Pomeranian"},
+    {"name_es": "Boxer", "folder": "n02108089-boxer"},
+    {"name_es": "Beagle", "folder": "n02088364-beagle"},
+    {"name_es": "Cocker Spaniel", "folder": "n02102318-cocker_spaniel"},
+    {"name_es": "Rottweiler", "folder": "n02106550-Rottweiler"},
+    {"name_es": "Maltes", "folder": "n02085936-Maltese_dog"},
+    {"name_es": "Shih Tzu", "folder": "n02086240-Shih-Tzu"},
+    {"name_es": "Xoloitzcuintle", "folder": "n02113978-Mexican_hairless"},
+    {"name_es": "Doberman", "folder": "n02107142-Doberman"}
+  ]
+}

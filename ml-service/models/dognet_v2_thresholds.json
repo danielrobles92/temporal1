@@ -1,0 +1,8 @@
+{
+  "not_dog": 0.5,
+  "breed_min": 0.4,
+  "teddy_imagenet": 0.5,
+  "wild_imagenet": 1.01,
+  "rescue_imagenet": 0.7,
+  "rescue_max_not_dog": 0.8
+}

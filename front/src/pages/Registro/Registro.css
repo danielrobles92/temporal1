@@ -1,0 +1,76 @@
+.registro-page {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+}
+
+.registro-container {
+  width: 100%;
+  max-width: 540px;
+}
+
+.registro-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.registro-header h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.registro-header p {
+  color: var(--primary-light);
+  font-size: 1rem;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.select-role {
+  width: 100%;
+}
+
+.role-hint {
+  display: block;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.form-terms {
+  margin: 0.25rem 0;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 0.25rem;
+  min-height: 48px;
+}
+
+@media (max-width: 768px) {
+  .registro-container {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .registro-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

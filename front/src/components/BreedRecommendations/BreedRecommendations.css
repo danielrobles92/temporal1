@@ -1,0 +1,178 @@
+.breed-rec {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.breed-rec-header h3 {
+  margin: 2px 0 8px;
+  color: var(--primary);
+}
+
+.breed-rec-eyebrow {
+  color: var(--primary-light);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.breed-rec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.breed-rec-chip {
+  font-size: 0.84rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.breed-rec-block {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+}
+
+.breed-rec-block h4 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.breed-rec-block p {
+  margin: 0 0 6px;
+  color: var(--text);
+}
+
+.breed-rec-block ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.breed-rec-block li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.breed-rec-muted {
+  display: block;
+  color: var(--text-soft);
+  font-size: 0.84rem;
+}
+
+.breed-rec-ref {
+  color: var(--primary-light);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.breed-rec-traits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.breed-rec-trait {
+  display: grid;
+  /* Columnas de ancho fijo para que las barras queden alineadas entre filas. */
+  grid-template-columns: minmax(0, 1.5fr) minmax(70px, 1fr) 10.5em 10em;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+}
+
+.breed-rec-trait-label { color: var(--text); }
+
+.breed-rec-bar {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border);
+}
+
+.breed-rec-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 999px;
+  background: var(--primary-light);
+}
+
+/* Marca de referencia: valor de los mestizos. */
+.breed-rec-bar-mutts {
+  position: absolute;
+  top: -3px;
+  width: 2px;
+  height: 14px;
+  background: var(--text);
+}
+
+.breed-rec-trait-value {
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.breed-rec-trait-value small {
+  font-weight: 400;
+  color: var(--text-soft);
+}
+
+.breed-rec-cmp {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+  background: var(--surface);
+}
+
+.breed-rec-cmp.is-mas,
+.breed-rec-cmp.is-menos {
+  color: var(--primary-dark);
+  border-color: var(--primary-light);
+}
+
+.breed-rec-questions {
+  border-color: #d9d6b8;
+  background: #fffdf2;
+}
+
+.breed-rec-sources summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.breed-rec-sources ol {
+  margin: 8px 0 0;
+  padding-left: 22px;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.breed-rec-sources li {
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .breed-rec-trait {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .breed-rec-bar {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}

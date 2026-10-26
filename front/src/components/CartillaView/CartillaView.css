@@ -1,0 +1,68 @@
+.cartilla-view {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.cartilla-view h3 {
+  margin: 0 0 12px;
+}
+
+.cartilla-view-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 18px;
+  margin: 0;
+}
+
+.cartilla-view-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartilla-view-grid dt {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.cartilla-view-grid dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cartilla-view-notas {
+  margin: 12px 0 0;
+  color: var(--text);
+}
+
+.cartilla-view-vacunas {
+  margin-top: 14px;
+}
+
+.cartilla-view-vacunas h4 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+
+.cartilla-view-vacunas table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.cartilla-view-vacunas th,
+.cartilla-view-vacunas td {
+  text-align: left;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cartilla-view-vacunas th {
+  color: var(--text-soft);
+  font-weight: 600;
+}

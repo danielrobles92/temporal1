@@ -1,0 +1,83 @@
+.dog-analysis {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dog-analysis-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.dog-analysis-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: var(--radius-xs);
+  border-left: 3px solid var(--border-strong);
+  background: var(--surface);
+}
+
+.dog-analysis-row.is-dog { border-left-color: var(--success); }
+.dog-analysis-row.is-other { border-left-color: var(--warning); }
+.dog-analysis-row.is-not-dog { border-left-color: var(--danger); }
+
+.dog-analysis-num {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  min-width: 52px;
+}
+
+.dog-analysis-muted { color: var(--text-soft); font-size: 0.88rem; }
+.dog-analysis-reject { color: var(--danger); font-size: 0.9rem; }
+
+.dog-analysis-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dog-chip {
+  font-size: 0.82rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.dog-chip-breed {
+  font-weight: 600;
+  border-color: var(--primary-light);
+}
+
+.dog-analysis-block {
+  color: var(--danger);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.dog-analysis-apply {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: var(--text-on-primary);
+  cursor: pointer;
+}
+
+.dog-analysis-apply:disabled { opacity: 0.6; cursor: default; }
+
+.dog-analysis-note {
+  color: var(--text-soft);
+  font-size: 0.78rem;
+}

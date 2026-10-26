@@ -1,0 +1,132 @@
+.image-slots-uploader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.image-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.image-slot-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface-soft);
+  aspect-ratio: 1 / 1;
+}
+
+.image-slot-card.is-primary {
+  border: 2px solid var(--primary, #2e7d32);
+}
+
+.image-slot-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-slot-num {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.image-slot-primary-tag {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--primary, #2e7d32);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.image-slot-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.image-slot-card:hover .image-slot-controls {
+  opacity: 1;
+}
+
+.image-slot-controls button {
+  flex: 1;
+  padding: 4px 0;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.image-slot-controls button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.image-slot-controls button.danger {
+  background: rgba(220, 80, 80, 0.95);
+  color: #fff;
+}
+
+.image-slot-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-soft);
+  background: var(--surface);
+  font-size: 0.85rem;
+}
+
+.image-slot-add:hover {
+  border-color: var(--primary, #2e7d32);
+  color: var(--primary, #2e7d32);
+}
+
+.image-slot-add input {
+  display: none;
+}
+
+.image-slot-add-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.image-slots-hint {
+  color: var(--text-soft);
+}
